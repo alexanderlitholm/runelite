@@ -1,5 +1,16 @@
 ![](https://runelite.net/img/logo.png)
-# runelite [![CI](https://github.com/runelite/runelite/workflows/CI/badge.svg)](https://github.com/runelite/runelite/actions?query=workflow%3ACI+branch%3Amaster) [![Discord](https://img.shields.io/discord/301497432909414422.svg)](https://discord.gg/ArdAhnN)
+# runelite [![CI](https://github.com/runelite/runelite/workflows/CI/badge.svg)](https://github.com/runelite/runelite/actions?query=workflow%3ACI
++branch%3Amaster) [![Discord](https://img.shields.io/discord/301497432909414422.svg)](https://discord.gg/ArdAhnN)
+
+### My Edits -> 
+- mvn clean package -DskipTests -Dtest=!testMultipleAccounts
+
+java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar runelite-client\target\client-1.11.8-SNAPSHOT.jar
+
+<!-- -Drunelite.pluginhub.version=1.11.7 -->
+
+`java -ea -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005  -jar runelite-client\target\client-1.11.8-SNAPSHOT-shaded.jar --debug --developer-mode`
+
 
 RuneLite is a free, open source OldSchool RuneScape client.
 
